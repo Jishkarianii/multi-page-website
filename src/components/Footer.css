@@ -1,0 +1,133 @@
+footer {
+    padding: 48px 0;
+    background-color: rgb(15,17,19);
+}
+
+.footer-inner {
+    display: flex;
+}
+
+.footer-contact {
+    padding-right: 48px;
+    max-width: 400px;
+}
+
+.footer-contact a {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.footer-contact a span {
+    color: var(--primary-color);
+}
+
+.footer-contact p {
+    padding: 28px 0;
+    color: rgb(119, 119, 121);
+    font-size: 17px;
+}
+
+.footer-social {
+    max-width: 212px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-social span {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255 255 255 / 20%);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.footer-social span:hover {
+    border: 1px solid rgb(255 255 255 / 20%);
+    background-color: var(--primary-color);
+}
+
+.footer-social span svg {
+    color: white;
+    font-size: 18px;
+}
+
+.footer-subscribe {
+    margin-top: 8px;
+    max-width: 370px;
+}
+
+.footer-subscribe h5 {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.footer-subscribe form {
+    margin: 28px 0 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-subscribe form input {
+    padding: 15px 25px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: normal;
+    color: var(--title-color);
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    outline: none;
+}
+
+.footer-subscribe form input:focus {
+    border: 1px solid var(--primary-color);
+}
+
+.footer-subscribe p {
+    color: rgb(119, 119, 121);
+    font-size: 17px;
+}
+
+.footer-subscribe p a {
+    color: white;
+    transition: 0.4s;
+}
+
+.footer-subscribe p a:hover {
+    color: rgba(255, 255, 255, 0.8);   
+}
+
+.copyright {
+    margin-top: 92px;
+    color: rgb(119, 118, 121);
+    font-size: 18px;
+}
+
+.copyright a {
+    color: var(--primary-color);
+}
+
+@media screen and (max-width: 769px) {
+    .footer-inner {
+        display: grid;
+        justify-content: center;
+        gap: 35px;
+    }
+
+    .footer-contact {
+        padding-right: 0;
+        max-width: 700px;
+    }
+
+    .footer-subscribe {
+        margin-top: 8px;
+        max-width: 700px;
+    }
+}

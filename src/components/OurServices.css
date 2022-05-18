@@ -1,0 +1,154 @@
+.our-services {
+    padding: 90px 0;
+    background-color: var(--second-bg);
+}
+
+.our-services-inner {
+    display: flex;
+}
+
+.our-services-photo {
+    max-width: 570px;
+    width: 100%;
+}
+
+.our-services-photo img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.our-services-content {
+    margin-right: 48px;
+    max-width: 600px;
+}
+
+.our-services-content h5 {
+    padding: 10px 0;
+    padding-left: 18px;
+    position: relative;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 0;
+}
+
+.our-services-content h5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: var(--title-bg-color);
+    z-index: -1;
+}
+
+
+.our-services-content h3 {
+    margin-top: 5px;
+    color: var(--title-color);
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+.our-services-content p {
+    margin: 24px 0;
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.8;
+}
+
+.progress-bar-cont {
+    padding-top: 24px;
+}
+
+.progress-bar-rect-wrap-container {
+    margin-bottom: 22px;
+    display: grid !important;
+}
+
+.progress-bar-rect-wrapper {
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.inner-rect-bar {
+    background-color: var(--primary-color) !important;
+}
+
+.rect-progress-bar-percent {
+    margin: 0 0 5px !important;
+    color: var(--title-color);
+    font-size: 18px !important;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    order: -1;
+}
+
+.progress-bar-cont .progress-bar:nth-child(1) .rect-progress-bar-percent {
+    width: 80%;
+}
+
+.progress-bar-cont .progress-bar:nth-child(1) .rect-progress-bar-percent::before {
+    content: 'Professionalism';
+}
+
+.progress-bar-cont .progress-bar:nth-child(2) .rect-progress-bar-percent {
+    width: 95%;
+}
+
+.progress-bar-cont .progress-bar:nth-child(2) .rect-progress-bar-percent::before {
+    content: 'Quality';
+}
+
+.progress-bar-cont .progress-bar:nth-child(3) .rect-progress-bar-percent {
+    width: 75%;
+}
+
+.progress-bar-cont .progress-bar:nth-child(3) .rect-progress-bar-percent::before {
+    content: 'Reliability';
+}
+
+@media screen and (max-width: 1100px) {
+    .our-services-inner {
+        flex-direction: column;
+    }
+
+    .our-services-content {
+        margin: 0 auto;
+        margin-bottom: 48px;
+        padding-right: 0;
+        max-width: 700px;
+    }
+    
+    .our-services-photo {
+        margin: 0 auto;
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .our-services-content h5 {
+        padding: 7px 0;
+        padding-left: 14px;
+        font-size: 16px;
+    }
+
+    .our-services-content h5::before {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .our-services-content h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .our-services-content p {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,126 @@
+.our-sitters {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    display: flex;
+}
+
+.our-sitters-photo {
+    max-width: 570px;
+    width: 100%;
+}
+
+.our-sitters-photo img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.our-sitters-content {
+    margin-right: 48px;
+    max-width: 690px;
+}
+
+.our-sitters-content h5 {
+    padding: 10px 0;
+    padding-left: 18px;
+    position: relative;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 0;
+}
+
+.our-sitters-content h5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: var(--title-bg-color);
+    z-index: -1;
+}
+
+
+.our-sitters-content h3 {
+    margin-top: 5px;
+    color: var(--title-color);
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+.our-sitters-content p {
+    margin: 24px 0;
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.8;
+}
+
+.our-sitters-content-inner {
+    padding-top: 22px;
+    display: flex;
+}
+
+.our-sitters-content-inner-photo img {
+    max-width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.our-sitters-content-inner-text p {
+    margin: 0;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 1100px) {
+    .our-sitters {
+        flex-direction: column;
+    }
+
+    .our-sitters-content {
+        margin: 0 auto;
+        margin-bottom: 48px;
+        padding-right: 0;
+        max-width: 700px;
+    }
+    
+    .our-sitters-photo {
+        margin: 0 auto;
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .our-sitters-content-inner {
+        flex-direction: column;
+    }
+
+    .our-sitters-content-inner-text p {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .our-sitters-content h5 {
+        padding: 7px 0;
+        padding-left: 14px;
+        font-size: 16px;
+    }
+
+    .our-sitters-content h5::before {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .our-sitters-content h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .our-sitters-content p {
+        font-size: 16px;
+    }
+}

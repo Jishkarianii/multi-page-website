@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-color: rgb(255,255,255);
+  --second-bg: rgb(247,247,247);
+  --border-color: rgba(255, 255, 255, 0);
+  --title-color: rgb(37,36,34);
+  --title-bg-color: rgb(218,255,204);
+  --text-color: rgba(22,28,45,0.7);
+  --primary-color: rgb(48,179,0);
+  --primary-hover: rgb(44,158,3);
+  --bg-banner: rgb(0 0 0 / 55%);
+  --map-filter: grayscale(0%);
+}
+
+.dark-mode {
+  --bg-color: rgb(35,34,32);
+  --second-bg: rgb(40,40,40);
+  --border-color: rgba(255, 255, 255, 0.2);
+  --title-color: rgb(255,255,255);
+  --text-color: rgba(194, 208, 218, 1);
+  --bg-banner: rgb(0 0 0 / 70%);
+  --map-filter: grayscale(100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind Siliguri', sans-serif;
+  box-sizing: border-box;
+}
+
+*::selection {
+  color: white;
+  background-color: var(--primary-color);
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+
+.App {
+  background-color: var(--bg-color);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+.btn {
+  padding: 12px 45px;
+  display: inline-block;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  background-color: var(--primary-hover);
+}

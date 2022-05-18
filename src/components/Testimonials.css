@@ -1,0 +1,137 @@
+.testimonials {
+    position: relative;
+    margin-top: 95px;
+    display: flex;
+    align-items: center;
+}
+
+.testimonials .testimonials-bg {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: calc(100% - 30px);
+    height: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.testimonials-inner {
+    position: relative;
+    width: 100%;
+    padding: 60px 0 45px;
+    display: flex;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+.testimonials-content {
+    margin-left: 48px;
+    max-width: 320px;
+}
+
+.testimonials-content h5 {
+    padding: 10px 0;
+    padding-left: 18px;
+    position: relative;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 0;
+}
+
+.testimonials-content h5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: var(--title-bg-color);
+    z-index: -1;
+}
+
+
+.testimonials-content h3 {
+    margin-top: 5px;
+    color: white;
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+.testimonials-content p {
+    margin: 24px 0;
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.8;
+}
+
+.testimonials .swiper {
+    max-width: 700px;
+    width: 100%;
+    height: 375px;
+}
+
+.testimonials .swiper-horizontal > .swiper-pagination-bullets {
+    top: 92%;
+    left: unset;
+    right: 30px;
+    bottom: unset;
+    width: 100px;
+    transform: scale(1.5) rotate(0deg);
+}
+
+@media screen and (max-width: 1100px) {
+    .testimonials-inner {
+        padding: 60px 15px 45px 15px;
+        flex-direction: column;
+    }
+
+    .testimonials-content {
+        margin: 0 auto;
+        margin-top: 42px;
+        margin-bottom: 22px;
+        padding-right: 0;
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .testimonials.container {
+        padding: 0;
+    }
+    
+    .testimonials .testimonials-bg {
+        left: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    .testimonials-inner {
+        border-radius: 0;
+    }
+
+
+    .testimonials-content h5 {
+        padding: 7px 0;
+        padding-left: 14px;
+        font-size: 16px;
+    }
+
+    .testimonials-content h5::before {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .testimonials-content h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .testimonials-content p {
+        font-size: 16px;
+    }
+}

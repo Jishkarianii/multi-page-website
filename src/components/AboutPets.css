@@ -1,0 +1,189 @@
+.about-pets {
+    background-color: var(--second-bg);
+}
+
+.about-pets-inner {
+    padding: 48px 15px;
+}
+
+.about-pets-content {
+    padding-right: 48px;
+    max-width: 600px;
+}
+
+.about-pets-content h5 {
+    padding: 10px 0;
+    padding-left: 18px;
+    position: relative;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 0;
+}
+
+.about-pets-content h5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: var(--title-bg-color);
+    z-index: -1;
+}
+
+.about-pets-content h3 {
+    margin-top: 5px;
+    color: var(--title-color);
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+.about-pets-content p {
+    margin-top: 24px;
+    margin-bottom: 48px;
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.8;
+}
+
+.about-pets-photo {
+    width: 100%;
+    max-width: 570px;
+}
+
+.about-pets-photo img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.about-pets-row-reverse {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.about-pets-row-reverse .about-pets-content {
+    padding-right: 0;
+    padding-left: 48px;
+}
+
+.about-pets-features {
+    padding: 48px 20px;
+    padding-bottom: 26px;
+    margin-top: 64px;
+    display: flex;
+    gap: 12px;
+    border-top: 1px solid rgb(240, 243, 241);
+}
+
+.pets-features-item {
+    display: flex;
+}
+
+.pets-features-item:hover svg {
+    color: rgb(253,211,64);
+}
+
+.pets-features-icon svg {
+    margin-top: 6px;
+    color: var(--primary-color);
+    font-size: 30px;
+    transition: 0.4s;
+}
+
+.pets-features-content {
+    margin-left: 30px;
+    max-width: 650px;
+}
+
+.pets-features-content a {
+    color: var(--title-color);
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.pets-features-content p {
+    margin-top: 6px;
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.8;
+}
+
+@media screen and (max-width: 1100px) {
+    .about-pets-row,
+    .about-pets-row-reverse {
+        justify-content: center;
+    }
+    
+    .about-pets-row {
+        flex-direction: column;
+    }
+    .about-pets-row-reverse {
+        margin-top: 42px;
+        flex-direction: column-reverse;
+    }
+    
+    .about-pets-content {
+        margin: 0 auto;
+        margin-bottom: 52px;
+        padding-right: 0;
+        max-width: 700px;
+    }
+    
+    .about-pets-photo {
+        margin: 0 auto;
+        max-width: 700px;
+    }
+    
+    .about-pets-row-reverse .about-pets-content {
+        margin-top: 40px;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .about-pets-features {
+        display: grid;
+        justify-content: center;
+        gap: 40px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .about-pets-content h5 {
+        padding: 7px 0;
+        padding-left: 14px;
+        font-size: 16px;
+    }
+
+    .about-pets-content h5::before {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .about-pets-content h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .about-pets-content p {
+        font-size: 16px;
+    }
+
+    .about-pets-content a {
+        font-size: 16px;
+    }
+
+    .pets-features-content a {
+        font-size: 20px;
+    }
+    
+    .pets-features-content p {
+        font-size: 16px;
+    }
+}

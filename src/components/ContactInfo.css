@@ -1,0 +1,241 @@
+.contact-info {
+    padding-top: 90px;
+    background-color: var(--second-bg);
+}
+
+.contact-info-content {
+    margin-right: 48px;
+    display: flex;
+}
+
+.contact-info-content-left {
+    width: 55%;
+}
+
+.contact-info-content-right {
+    width: 45%;
+}
+
+.contact-info-content h5 {
+    padding: 10px 0;
+    padding-left: 18px;
+    position: relative;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 0;
+}
+
+.contact-info-content h5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: var(--title-bg-color);
+    z-index: -1;
+}
+
+
+.contact-info-content h3 {
+    margin-top: 5px;
+    color: var(--title-color);
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+.contact-info-content p {
+    margin: 24px 0;
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.8;
+}
+
+.contact-info-cards {
+    margin: 48px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.contact-info-card-item {
+    padding: 40px 16px;
+    border-radius: 6px;
+    background-color: var(--bg-color);
+    text-align: center;
+}
+
+.contact-info-card-item span {
+    margin: 0 auto;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.contact-info-card-item span svg {
+    color: white;
+}
+
+.contact-info-card-item h5 {
+    margin: 25px 0 15px;
+    color: var(--title-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-info-card-item p,
+.contact-info-card-item p a {
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.contact-info-card-item p a:hover {
+    color: var(--title-color);
+}
+
+.contact-info-card-item p a {
+    display: block;
+}
+
+.contact-info-form {
+    margin: 0 auto;
+    padding: 48px 0;
+    padding-bottom: 95px;
+    max-width: 850px;
+}
+
+.contact-info-form form {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+}
+
+.contact-info-form h4 {
+    color: var(--title-color);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.contact-info-form .name-email-cont {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+}
+
+.contact-info-form .btn-cont {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-info-form input,
+.contact-info-form textarea {
+    padding: 15px 25px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: normal;
+    color: var(--title-color);
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-color);
+    outline: none;
+}
+
+.contact-info-form textarea {
+    height: 140px;
+    resize: none;
+}
+
+.contact-info-form input:focus,
+.contact-info-form textarea:focus {
+    border: 1px solid var(--primary-color);
+}
+
+.contact-info-map {
+    border: none;
+    margin-bottom: -10px;
+    filter: var(--map-filter);
+}
+
+@media screen and (max-width: 1100px) {
+    .contact-info-inner {
+        max-width: 700px;
+    }
+
+    .contact-info-content {
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 48px;
+        padding-right: 0;
+    }
+    
+    .contact-info-content-left,
+    .contact-info-content-right {
+        width: 100%;
+    }
+    
+    .contact-info-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-info-form .name-email-cont {
+        grid-template-columns: auto;
+    }
+
+    .contact-info-form .btn-cont {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .contact-info-content h5 {
+        padding: 7px 0;
+        padding-left: 14px;
+        font-size: 16px;
+    }
+    
+    .contact-info-content h5::before {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .contact-info-content h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .contact-info-content p {
+        font-size: 16px;
+    }
+
+    .contact-info-cards {
+        grid-template-columns: auto;
+    }
+
+    .contact-info-form {
+        padding: 0;
+        padding-bottom: 48px;
+    }
+
+    .contact-info-form h4 {
+        font-size: 24px;
+    }
+
+    .contact-info-form .btn-cont .btn {
+        padding: 12px 35px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,114 @@
+.pet-care-service {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    display: flex;
+}
+
+.pet-care-service-photo {
+    max-width: 570px;
+    width: 100%;
+}
+
+.pet-care-service-photo img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.pet-care-service-content {
+    margin-right: 48px;
+    max-width: 600px;
+}
+
+.pet-care-service-content h5 {
+    padding: 10px 0;
+    padding-left: 18px;
+    position: relative;
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 0;
+}
+
+.pet-care-service-content h5::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    background-color: var(--title-bg-color);
+    z-index: -1;
+}
+
+
+.pet-care-service-content h3 {
+    margin-top: 5px;
+    color: var(--title-color);
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 700;
+}
+
+.pet-care-service-content p {
+    margin: 24px 0;
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.8;
+}
+
+.pet-care-service-list {
+    margin-left: 20px;
+    margin-bottom: 32px;
+    color: var(--title-color);
+}
+
+.pet-care-service-list li {
+    margin-bottom: 5px;
+    font-size: 19px;
+}
+
+@media screen and (max-width: 1100px) {
+    .pet-care-service {
+        flex-direction: column;
+    }
+
+    .pet-care-service-content {
+        margin: 0 auto;
+        margin-bottom: 48px;
+        padding-right: 0;
+        max-width: 700px;
+    }
+    
+    .pet-care-service-photo {
+        margin: 0 auto;
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .pet-care-service-content h5 {
+        padding: 7px 0;
+        padding-left: 14px;
+        font-size: 16px;
+    }
+
+    .pet-care-service-content h5::before {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .pet-care-service-content h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    
+    .pet-care-service-content p {
+        font-size: 16px;
+    }
+
+    .pet-care-service-content a {
+        font-size: 16px;
+    }
+}
